@@ -5,6 +5,8 @@
               pluginChannelConfigs="{2, 2}">
   <MAINGROUP id="ksVtDE" name="AutoPan">
     <GROUP id="{EEF527D7-987D-56A5-6104-4A29F026129F}" name="Source">
+      <FILE id="HtWpCD" name="AutoPan.cpp" compile="1" resource="0" file="Source/AutoPan.cpp"/>
+      <FILE id="q98Wr7" name="AutoPan.h" compile="0" resource="0" file="Source/AutoPan.h"/>
       <FILE id="CLnQDA" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="oVV5Ty" name="PluginProcessor.h" compile="0" resource="0"
