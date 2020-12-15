@@ -22,12 +22,16 @@ public:
     virtual void process (const juce::dsp::ProcessContextReplacing<float>& context) override;
     virtual void reset() override;
     
+    void setAmount(float amount);
     void setFrequency(float frequency);
+    void setPhaseOffset(float offset);
     
 private:
     
-    float sampleRate;
+    double sampleRate;
     std::array<juce::dsp::Oscillator<float>, 2> lfos;
     std::array<juce::dsp::Gain<float>, 2> gains;
+    juce::SmoothedValue<float> amount;
+    juce::SmoothedValue<float> offset;
     
 };

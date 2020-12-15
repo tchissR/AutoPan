@@ -181,3 +181,19 @@ juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new AutoPanAudioProcessor();
 }
+
+//==============================================================================
+void AutoPanAudioProcessor::setFrequency(float frequency)
+{
+    autopan.setFrequency(frequency);
+}
+
+void AutoPanAudioProcessor::setAmount(float amount)
+{
+    autopan.setAmount(amount);
+}
+
+void AutoPanAudioProcessor::setPhase(float phase)
+{
+    autopan.setPhaseOffset(phase);
+}
